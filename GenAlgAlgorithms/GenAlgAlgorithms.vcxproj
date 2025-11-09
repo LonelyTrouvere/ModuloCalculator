@@ -133,6 +133,7 @@
     <ClInclude Include="MathBase\FiniteField.h" />
     <ClInclude Include="MathBase\FiniteNumber.h" />
     <ClInclude Include="MathBase\GCD.h" />
+    <ClInclude Include="MathBase\Logarithm.h" />
     <ClInclude Include="MathBase\merr\errloc.h" />
     <ClInclude Include="MathBase\merr\ErrorManager.h" />
     <ClInclude Include="MathBase\merr\errpick.h" />
@@ -152,6 +153,7 @@
   <ItemGroup>
     <ClCompile Include="MathBase\CalculationOfSquareRoot.cpp" />
     <ClCompile Include="MathBase\GCD.cpp" />
+    <ClCompile Include="MathBase\Logarithm.cpp" />
     <ClCompile Include="MathBase\merr\errloc.cpp" />
     <ClCompile Include="MathBase\merr\ErrorManager.cpp" />
     <ClCompile Include="MathBase\merr\errpick.cpp" />
