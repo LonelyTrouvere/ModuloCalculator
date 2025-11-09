@@ -42,6 +42,21 @@
     <ClInclude Include="MathBase\parse\FlexLexer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="MathBase\FiniteField.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MathBase\FiniteNumber.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MathBase\GCD.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MathBase\PositiveNumber.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MathBase\SignedNumber.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="test.cpp">
@@ -60,6 +75,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="MathBase\parse\scanner.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MathBase\GCD.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
