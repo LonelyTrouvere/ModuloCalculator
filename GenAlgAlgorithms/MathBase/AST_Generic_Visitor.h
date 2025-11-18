@@ -2,6 +2,7 @@
 #include "parse/command.h"
 #include "merr/MathError.h"
 #include "merr/errpick.h"
+#include "AST_Core.h"
 namespace MathBase {
 	class ASTVisitor {
 	protected:
@@ -13,5 +14,11 @@ namespace MathBase {
 		merr::MathError getError();
 		void raiseError(std::string error, merr::LocationStruct* loc = nullptr);
 		bool testErrorPicker(merr::ErrorPicker& p, merr::LocationStruct* loc = nullptr);
+
+		virtual void visitNumber(NumberNode& number) = 0;
+		virtual void visitVariable(VariableNode& variable) = 0;
+		virtual void visitOperation(OperationNode& operation) = 0;
+		virtual void visitUnary(UnaryNode& operation) = 0;
+		virtual void visitFunction(FunctionNode& func) = 0;
 	};
 }
