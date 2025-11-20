@@ -6,7 +6,7 @@
 #include <string>
 #include <vector>
 #include <stdint.h>
-#include "MathBase/AST_Core.h"
+#include "../AST_Core.h"
 namespace MathBase {
 
 	class OperationNode : public ASTNode {

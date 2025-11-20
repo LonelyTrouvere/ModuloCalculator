@@ -99,6 +99,9 @@
     <ClInclude Include="MathBase\AST_FiniteFieldCalculator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="MathBase\utils\StringPrintable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="test.cpp">
@@ -156,6 +159,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="MathBase\AST_Context_Type.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MathBase\AST_FiniteFieldCalculator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MathBase\utils\StringPrintable.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
