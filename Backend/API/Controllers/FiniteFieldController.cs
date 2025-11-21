@@ -30,14 +30,41 @@ namespace API.Controllers
 
             return Ok(ApiResponse<Dictionary<string, string>>.SuccessResponse(resultDict));
         }
+
+        [HttpPost("random_prime")]
+        public ActionResult<Dictionary<string, string>> Random([FromBody] RandomPrimeRequest request)
+        {
+            if (request == null)
+            {
+                return BadRequest("Request cannot be null.");
+            }
+
+            string errorStr = string.Empty;
+            var result = FiniteFieldWrapper.generate_random_prime(ref errorStr);
+            var resultDict = new Dictionary<string, string>
+            {
+                { "result", result}
+            };
+
+            if (!string.IsNullOrEmpty(errorStr))
+            {
+                return BadRequest(ApiResponse<string>.ErrorResponse(errorStr));
+            }
+
+            return Ok(ApiResponse<Dictionary<string, string>>.SuccessResponse(resultDict));
+        }
         
     }
-    
+
     public class FiniteFieldOperationRequest
     {
         public string expr { get; set; }
         public string? n { get; set; }
     }
     
-    
+    public class RandomPrimeRequest
+    {
+        public string? min { get; set; }
+        public string? max { get; set; }
+    }
 }
